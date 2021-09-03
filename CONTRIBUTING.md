@@ -14,7 +14,7 @@ There's a folder for each subproject in `packages/`. All of them are plugins, ex
 
 ## Installing
 
-To install the project's dependencies, run `yarn` in the root directory of the repository.
+Set your yarn version to berry `yarn set version berry` and to install the project's dependencies, run `yarn` in the root directory of the repository.
 
 ## Building the projects
 

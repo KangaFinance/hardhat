@@ -1,4 +1,5 @@
 import * as t from "io-ts";
+import { BN } from "ethereumjs-util";
 
 import { nullable } from "../../../../util/io-ts";
 import { rpcAddress, rpcData, rpcHash, rpcQuantity } from "../base-types";

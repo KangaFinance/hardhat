@@ -32,8 +32,8 @@
     "@types/dockerode": "^2.5.19",
     "@types/fs-extra": "^5.1.0",
     "@types/mocha": "^5.2.6",
-    "@types/node-fetch": "^2.3.7",
     "@types/node": "^10.17.24",
+    "@types/node-fetch": "^2.3.7",
     "@typescript-eslint/eslint-plugin": "4.29.2",
     "@typescript-eslint/parser": "4.29.2",
     "chai": "^4.2.0",
@@ -47,10 +47,9 @@
     "ts-node": "^8.1.0",
     "typescript": "~4.0.3"
   },
-  "peerDependencies": {},
   "dependencies": {
-    "fs-extra": "^7.0.1",
     "dockerode": "^2.5.8",
+    "fs-extra": "^7.0.1",
     "node-fetch": "^2.6.0"
   }
 }
