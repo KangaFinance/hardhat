@@ -1,10 +1,6 @@
 # Node modules
 /node_modules
 
-# Yarn
-.yarn
-*/.yarn
-
 # Compilation output
 /build-test/
 /dist
