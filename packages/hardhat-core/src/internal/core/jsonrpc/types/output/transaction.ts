@@ -1,5 +1,4 @@
 import * as t from "io-ts";
-import { BN } from "ethereumjs-util";
 
 import { nullable, optional } from "../../../../util/io-ts";
 import { rpcAccessList } from "../access-list";

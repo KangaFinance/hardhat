@@ -35,8 +35,8 @@
     "@types/chai": "^4.2.0",
     "chai": "^4.2.0",
     "ethereumjs-util": "^7.1.0",
-    "fs-extra": "^7.0.1",
-    "truffle-contract": "^3.0.7"
+    "truffle-contract": "^3.0.7",
+    "fs-extra": "^7.0.1"
   },
   "devDependencies": {
     "@nomiclabs/hardhat-web3-legacy": "^2.0.0",
