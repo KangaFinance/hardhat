@@ -25,6 +25,9 @@ enum NetworkID {
   // Binance Smart Chain
   BSC = 56,
   BSC_TESTNET = 97,
+  // Harmony
+  HARMONY = 1666600000,
+  HARMONY_TESTNET = 1666700000,
   // Huobi ECO Chain
   HECO = 128,
   HECO_TESTNET = 256,
@@ -68,6 +71,14 @@ const networkIDtoEndpoints: NetworkMap = {
   [NetworkID.BSC_TESTNET]: {
     apiURL: "https://api-testnet.bscscan.com/api",
     browserURL: "https://testnet.bscscan.com",
+  },
+  [NetworkID.HARMONY]: {
+    apiURL: "https://api.s0.t.hmny.io",
+    browserURL: "https://explorer.harmony.one/",
+  },
+  [NetworkID.HARMONY_TESTNET]: {
+    apiURL: "https://api.s0.b.hmny.io",
+    browserURL: "https://explorer.pops.one/",
   },
   [NetworkID.HECO]: {
     apiURL: "https://api.hecoinfo.com/api",
