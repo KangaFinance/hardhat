@@ -121,9 +121,11 @@ export async function lookupMatchingBytecode(
 ): Promise<ContractInformation[]> {
   const contractMatches = [];
   const fqNames = await artifacts.getAllFullyQualifiedNames();
+  console.log(`fqNames: `,JSON.stringify(fqNames))
 
   for (const fqName of fqNames) {
     const buildInfo = await artifacts.getBuildInfo(fqName);
+    console.log(`buildInfo: `,JSON.stringify(buildInfo))
 
     if (buildInfo === undefined) {
       continue;
@@ -138,6 +140,8 @@ export async function lookupMatchingBytecode(
     }
 
     const { sourceName, contractName } = parseFullyQualifiedName(fqName);
+    console.log(`sourceName: `,JSON.stringify(sourceName))
+    console.log(`contractName: `,JSON.stringify(contractName))
 
     const contractInformation = await extractMatchingContractInformation(
       sourceName,
@@ -145,6 +149,7 @@ export async function lookupMatchingBytecode(
       buildInfo,
       deployedBytecode
     );
+    console.log(`contractInformation: `,JSON.stringify(contractInformation))
     if (contractInformation !== null) {
       contractMatches.push(contractInformation);
     }

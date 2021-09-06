@@ -521,6 +521,9 @@ async function inferContract(
   matchingCompilerVersions: string[],
   deployedBytecode: Bytecode
 ) {
+  console.log(`artifacts: ${JSON.stringify(artifacts)}`)
+  console.log(`matchingCompilerVersions: ${JSON.stringify(matchingCompilerVersions)}`)
+  console.log(`deployedBytecode: ${JSON.stringify(deployedBytecode)}`)
   const contractMatches = await lookupMatchingBytecode(
     artifacts,
     matchingCompilerVersions,
